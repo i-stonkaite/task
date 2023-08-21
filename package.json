@@ -1,0 +1,20 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:fe": "TEST_ENV=test npx playwright test --grep @FE --headed",
+    "test:be": "TEST_ENV=test npx playwright test --grep @BE --headed",
+    "test:all": "TEST_ENV=test npx playwright test --grep '@FE|@BE' --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
